@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>');
 });
 
+app.get('/ws', (req, res) => {
+    res.send('<h1>Hello world Ws</h1>');
+});
+
 io.on('connection', (socket) => {
 
     console.log(`Socket connected to ${socket.id}`)
