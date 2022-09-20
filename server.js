@@ -102,7 +102,7 @@ io.on('connection', (socket) => {
 
         }
 
-        if(recived == 10){
+        if(recived == 15){
             console.log("emmit streaming")
             socket.emit("streaming", true);
         }
